@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Configuração de codificação e responsividade -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba do navegador -->
   <title>Ifud - Os melhores produtos!</title>
+  <!-- Inclusão do Bootstrap e ícones -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+  <!-- Barra de navegação superior -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><i class="bi bi-cake2"></i> Ifud</a>
+      <!-- Botão para versão mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Menu principal de navegação -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Links de navegação -->
           <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="pedido.html">Pedido</a></li>
           <li class="nav-item dropdown">
+            <!-- Menu dropdown para categorias -->
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorias</a>
             <ul class="dropdown-menu">
+              <!-- Links para páginas de categorias -->
               <li><a class="dropdown-item" href="pizza.html">Pizzas</a></li>
               <li><a class="dropdown-item" href="hamburguer.html">Hambúrgueres</a></li>
-              <li><a class="dropdown-item" href="sushi.html">Sushis</a></li>
+              <li><a class="dropdown-item" href="sushi.html">Sushi's</a></li>
               <li><a class="dropdown-item" href="bebida.html">Bebidas</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
         </ul>
+        <!-- Campo de busca -->
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar...">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -36,27 +46,30 @@
       </div>
     </div>
   </nav>
-
+  <!-- Cabeçalho com título e slogan -->
   <header class="bg-success text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">iFud - Aqui tem as melhores opções!</h1>
       <p class="lead">Faça seu pedido e receba em casa!</p>
     </div>
   </header>
-
+  <!-- Seção com os produtos em destaque -->
   <section id="produtos" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Melhores Produtos!</h2>
       <div class="row">
+        <!-- Produto 1: Pizza -->
         <div class="col-md-3">
            <div class="card h-100 w-100">
             <img src="imagens/pizza4queijos.png" class="card-img-top" alt="Pizza 4 Queijos">
             <div class="card-body">
               <h5 class="card-title">Pizza 4 Queijos</h5>
+              <!-- Link direto para seção da pizza -->
               <a href="pizza.html#pizza4queijos" class="btn btn-primary">Pedir</a>
             </div>
           </div>
         </div>
+        <!-- Produto 2: Hambúrguer -->
         <div class="col-md-3">
            <div class="card h-100 w-100">
             <img src="imagens/hamburguerclassico.png" class="card-img-top" alt="Hambúrguer Clássico">
@@ -66,6 +79,7 @@
             </div>
           </div>
         </div>
+         <!-- Produto 3: Sushi -->
         <div class="col-md-3">
            <div class="card h-100 w-100">
             <img src="imagens/sushihotholl.png" class="card-img-top" alt="Sushi Especial">
@@ -75,6 +89,7 @@
             </div>
           </div>
         </div>
+        <!-- Produto 4: Bebida -->
         <div class="col-md-3">
            <div class="card h-100 w-100">
             <img src="imagens/bebidalaranja.png" class="card-img-top" alt="Suco de Laranja">
@@ -87,18 +102,19 @@
       </div>
     </div>
   </section>
-
+  <!-- Rodapé com informações e redes sociais -->
   <footer class="bg-dark text-white text-center py-4">
     <p>&copy; 2025 - Tibuson Soft</p>
     <p>Reunindo Soluções!</p>
     <p>
+      <!-- Ícones sociais -->
       <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
       <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
       <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
       <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
     </p>
   </footer>
-
+  <!-- Scripts do Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
